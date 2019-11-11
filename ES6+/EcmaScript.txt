@@ -1,0 +1,59 @@
+ES6+ (Novas formas de escrever o código do JavaScript )
+EcmaScript + versão (6 -> 2015, 7 -> 2016)
+
+-> Quem decide as novas funcionalidades do JavaScript
+
+Babel: Converte o código para que todos os browsers consiga ler 
+
+Webpack: - Servidor com live reload
+
+Classes:
+
+Arrow Functions: 
+
+Desestruturação: 
+
+Rest/spread:
+
+Import/export:
+
+Async/await:
+
+
+
+// NodeJs -> Instalações de dependências
+// Yarn   -> Gerenciador de pacotes
+
+
+
+/// PARTE 01 
+//  Configurando o Babel - Transforma as features ES7, ES8, em uma forma que todos
+                           os navegadores entendam
+
+Na raiz do projeto
+>>> yarn init // e pressionar enter
+
+package.json => Armazena as informações de dependências da aplicação
+
+>>> yarn add @babel/cli
+    -> Permite trabalhar com a interface de linha de comando do babel
+    -> Utilizar comandos através do terminal
+
+>>> yarn add @babel/preset-env
+
+-- Criando um arquivo na raiz do projeto
+    .babelrc // Aqui serão armazenadas as configurações do babel
+
+>>> yarn add @babel/core
+
+/Na raiz
+index.html
+main.js
+
+No package foi criado um novo objeto: scripts, que pega o main.js e gera o bundle.js
+bundle.js -> Convertido para versões
+
+-o // passa outro arquivo
+-w // monitora o main.js para gerar o bundle.js
+
+>>> yarn dev
