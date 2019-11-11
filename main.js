@@ -1,8 +1,25 @@
 // Gerando Classes
 
-class TodoList {
+// Criando herança 
+class List {
+    constructor() {
+        this.data = [];
+    }
+
+    add(data){
+        this.data.push(data);
+        console.log(this.data)
+    }
+}
+
+
+class TodoList /* Extendendo a lista*/ extends List{
+/*    
+            Removendo o conteúdo pois será
+                    usado da List
+
     constructor(){
-        /* Primeiro método a ser executado quando um novo 
+         Primeiro método a ser executado quando um novo 
            objeto é instanciado.
 
            Podemos criar ações/funções que são executadas
@@ -10,7 +27,7 @@ class TodoList {
                       
            Ou podemos iniciar variáveis, que é o caso desse
            exemplo        
-        */
+        
 
         this.todos = []; // Array que armazerá tarefas
     }
@@ -20,6 +37,7 @@ class TodoList {
         this.todos.push('Fazer café');
         console.log(this.todos)
     }
+*/
 }
 
 
@@ -34,5 +52,5 @@ const MinhaLista = new TodoList(); // Variável que armazena uma nova lista
 */
 
 document.querySelector('button#addTodo').onclick = function(){
-    MinhaLista.addTodo();
+    MinhaLista./*addTodo();*/add('Fazer café com açúcar')
 }
