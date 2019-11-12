@@ -14,6 +14,16 @@ class List {
 
 
 class TodoList /* Extendendo a lista*/ extends List{
+    constructor(){
+        // Adicionando uma informação a mais
+        super(); // Propriedade que chama a constructor da classe pai
+        this.user = "Miro"
+    }
+    showUser(){
+        console.log(this.user)
+    }
+
+
 /*    
             Removendo o conteúdo pois será
                     usado da List
@@ -43,7 +53,7 @@ class TodoList /* Extendendo a lista*/ extends List{
 
 // Instanciando um objeto/classe
 
-const MinhaLista = new TodoList(); // Variável que armazena uma nova lista
+var MinhaLista = new TodoList(); // Variável que armazena uma nova lista
 
 /*  Como a tarefa será adicionada ao array ?
     
@@ -54,3 +64,5 @@ const MinhaLista = new TodoList(); // Variável que armazena uma nova lista
 document.querySelector('button#addTodo').onclick = function(){
     MinhaLista./*addTodo();*/add('Fazer café com açúcar')
 }
+
+MinhaLista.showUser(); // Chama o método da classe - sem o uso do botão
