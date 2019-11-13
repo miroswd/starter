@@ -18,7 +18,8 @@ const cidade = usuario.endereco.cidade
 
 const {nome, idade, endereco:{cidade}} = usuario;
 
-// {nome das propriedades} de(=) objeto
+// {nome das propriedades} de(=) objeto -> Isso para objetos
+// [nome das propriedades] de(=) array  -> Isso para vetores
 
 
 console.log(cidade)

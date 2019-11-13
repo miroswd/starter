@@ -1,3 +1,4 @@
 {
-    "presets":["@babel/preset-env"] // Identifica o ambiente
+    "presets":["@babel/preset-env"], // Identifica o ambiente
+    "plugins":["@babel/plugin-proposal-object-rest-spread"]
 }
