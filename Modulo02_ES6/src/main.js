@@ -1,7 +1,28 @@
-import ClasseUsuario, {idade as IdadeUsuario /*idade*/} from '../functions'
+// Utilizando a biblioteca axios - acessa API
 
-// 1.1
-ClasseUsuario.info()
+/*
+>>> yarn add axios
+*/
 
-// 1.2
-console.log(IdadeUsuario)
+import axios from 'axios';
+
+class Api {
+    static async getUserInfo(username){
+    try {   
+        const response = await axios.get(`https://api.github.com/users/${username}`)
+        console.log(response);
+    } catch(err){
+        console.warn('Erro na API')
+    }
+        
+    }
+}
+
+Api.getUserInfo('miroswd')
+Api.getUserInfo('miroswda')
+
+
+/*
+    Promises -> .then .catch
+    no async await -> try {} catch (err){}
+*/
