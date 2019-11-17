@@ -1,8 +1,0 @@
-// Configurando Webpack -> Converetendo todas as informações do bundle
-
->>> yarn add webpack webpack/cli
-
-Essas dependências serão utilizadas apenas em ambiente de desenvolvimento
-configurando o webpack
-
-webpack.config.js // Arquivo de configuração do webpack
