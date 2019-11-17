@@ -6,3 +6,22 @@ alterar de dependecies para devDependencies
 criar um arquivo webpack.config.js  
 
 >>> yarn add babel-loader@8.0.0-beta.0 -D
+
+
+// webpack dev server
+criando 2 pastas(public e src)
+src -> todo o código javascript da aplicação que será monitorado pelo o webpack
+public -> arquivos que não serão monitorados pelo o webpack
+
+no webpack.nofig -> acrescento as pastas public e src ao destino e fonte
+
+>>> yarn add webpack-dev-server -D
+
+acrescentando uma nova opção no webpackconfig
+    devServer -> Caminho voltado para o servidor
+
+no package: "dev": "webpack-dev-server --mode=development"
+
+o webpack-dev embute o bundle.js, ele não é criado fisicamente.
+
+acessar o localhost:8080 // ao rodar o yarn dev, ele exibe um monte de mensagem, inclusive a porta do localhost
