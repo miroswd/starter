@@ -1,0 +1,8 @@
+No package.json:
+alterar de dependecies para devDependencies
+
+>>> yarn add webpack webpack-cli -D
+
+criar um arquivo webpack.config.js  
+
+>>> yarn add babel-loader@8.0.0-beta.0 -D
