@@ -54,4 +54,4 @@ const executa = async () => {
     console.log(await minhaPromise())
 }
 
-executa()
+executa()   
