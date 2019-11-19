@@ -24,5 +24,5 @@ Api.getUserInfo('miroswda')
 
 /*
     Promises -> .then .catch
-    no async await -> try {} catch (err){}
+    no async await -> try {} catch (err){}  
 */
